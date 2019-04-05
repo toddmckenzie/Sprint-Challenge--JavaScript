@@ -30,13 +30,33 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+  Both of these loop through and array but the biggest difference is the .map returns a
+  new array and the .forEach does not.
+
 2. What is the difference between a function and a method?
+
+  A method is basically a function but it is on an object.  When it is on an object
+  it is called a method.
 
 3. What is closure?
 
+  Closure is being able to go outside of the lexical scope in order to use a variable.
+
 4. Describe the four rules of the 'this' keyword.
 
+  1. Window Binding-  If you console.log(this) it will bind to the window.
+
+  2. Implicit binding -  if you have an object and invoke a function the this keyword
+  will refer to the meaning before the . Ex Object.invokefunct('hello'); this binds to Object.
+
+  3. Explicit binding -  This binding occurs when your use .call, .apply, or .bind to an object.
+
+  4. New keyword binding - This binding occurs when you call new Whatever('person') on a   constructor function.  This will bind to the new object.
+
+
 5. Why do we need super() in an extended class?
+
+  The super() allows the new class to inherit prototypes from the parent class.
 
 ## Project Set up
 
@@ -65,11 +85,11 @@ Your finished project must include all of the following requirements:
 **Pro tip for this challenge: If something seems like it isn't working locally, copy and paste your code up to codepen and take another look at the console.**
 
 ## Task 1: Objects and Arrays
-Test your knowledge of objects and arrays. 
+Test your knowledge of objects and arrays.
 * [ ] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
 
 ## Task 2: Functions
-This challenge takes a look at callbacks and closures as well as scope. 
+This challenge takes a look at callbacks and closures as well as scope.
 * [ ] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
 
 ## Task 3: Prototypes
