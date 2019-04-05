@@ -40,6 +40,11 @@ console.log(consume("Mary","Poppins", greeting)); // Hello Mary Poppins, nice to
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
+// This is a prime example of closure.  The nestedFuction first looks in its lexical scope
+// for the variable and doesn't see if so it look on the outer side of the function to find it.
+// A function can look on the outer side but it can go to an inner function to find the variable because it
+// can't access that.
+
 // Explanation:
 
 
@@ -50,7 +55,7 @@ function myFunction() {
   const internal = "Hello! I'm inside myFunction!";
 
   function nestedFunction() {
-    console.log(internal);
+    console.log(internal);  //internal is accessible here but it would not be accessible outside of myFunction;
   };
   nestedFunction();
 }
